@@ -1,0 +1,18 @@
+using NUnit.Framework;
+using NUnit.Core;
+
+namespace SeleniumTests
+{
+    public class Test1
+    {
+        [Suite] public static TestSuite Suite
+        {
+            get
+            {
+                TestSuite suite = new TestSuite("Test1");
+                suite.Add(new test1());
+                return suite;
+            }
+        }
+    }
+}
